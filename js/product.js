@@ -73,8 +73,15 @@ document.addEventListener("DOMContentLoaded", function () {
     element.addEventListener("click", function (e) {
       let nextEl = element.nextElementSibling;
       let parentEl = element.parentElement;
+      let dropdownIcon = element.querySelector("img");
 
       if (nextEl) {
+        if (nextEl.classList.contains("show")) {
+          dropdownIcon.style.transform = "rotate(0deg)";
+        } else {
+          dropdownIcon.style.transform = "rotate(90deg)";
+        }
+
         e.preventDefault();
         let mycollapse = new bootstrap.Collapse(nextEl);
 
@@ -87,6 +94,9 @@ document.addEventListener("DOMContentLoaded", function () {
             parentEl.parentElement.querySelector(".submenu.show");
           // if it exists, then close all of them
           if (opened_submenu) {
+            opened_submenu.previousElementSibling.querySelector(
+              "img"
+            ).style.transform = "rotate(0deg)";
             new bootstrap.Collapse(opened_submenu);
           }
         }

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="./css/customStyle1.css" />
+    <link rel="stylesheet" href="./font/IRANYekan/WebFonts/css/style.css" />
+    <link rel="stylesheet" href="./css/fstdropdown.min.css" />
+
+    <title>My first Project</title>
+  </head>
+  <body id="myProductBody">
+    <br />
+
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary d-lg-none d-flex justify-content-start"
+    >
+      <button
+        class="navbar-toggler ms-5"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onclick="openNav()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <!-- sidebar desktop -->
+
+    <div class="container custom-container">
+      <div class="row">
+        <!-- sidebar -->
+        <div class="col-12 col-lg-3 sidebar-desktop z-2">
+          <!-- <div class="sidebar-desktop-inner"> -->
+          <div class="sidebar-desktop-inner" data-sticky="true">
+            <!-- section in sidebar 0 -->
+            <div class="sidebar-section0 bg-light rounded-4 my-2">
+              <div class="d-flex justify-content-around px-0 py-3">
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn d-lg-none"
+                  style="font-size: 30px !important"
+                  onclick="closeNav()"
+                  >&times;</a
+                >
+
+                <div class="fs-6"><span>فیلترهای اعمال شده</span></div>
+                <div class=""><a class="delete-btn text-danger">حذف</a></div>
+              </div>
+              <hr class="m-0" />
+              <div
+                class="sidebar-section2 d-flex justify-content-between border-2 mx-4 my-2 border-2 rounded-3 px-3 py-2"
+              >
+                <div class=" ">
+                  <span class="text-in-section2"> جهاد دانشگاهی </span>
+                </div>
+
+                <div class="icon-in-delete" onclick="deleteFilter(this)">
+                  <img src="img/cross.png" alt="" />
+                </div>
+              </div>
+
+              <div
+                class="sidebar-section2 d-flex justify-content-between border-2 mx-4 my-2 border-2 rounded-3 px-3 py-2"
+              >
+                <div class=" ">
+                  <span class="text-in-section2"> فنی و حرفه ای </span>
+                </div>
+
+                <div class="icon-in-delete" onclick="deleteFilter(this)">
+                  <img src="img/cross.png" alt="" />
+                </div>
+              </div>
+
+              <div
+                class="sidebar-section2 d-flex justify-content-between border-2 mx-4 my-2 border-2 rounded-3 px-3 py-2"
+              >
+                <div class=" ">
+                  <span class="text-in-section2"> جهاد دانشگاهی </span>
+                </div>
+
+                <div class="icon-in-delete" onclick="deleteFilter(this)">
+                  <img src="img/cross.png" alt="" />
+                </div>
+              </div>
+
+              <div
+                class="sidebar-section2 d-flex justify-content-between border-2 mx-4 my-2 border-2 rounded-3 px-3 py-2"
+              >
+                <div class=" ">
+                  <span class="text-in-section2"> جهاد دانشگاهی </span>
+                </div>
+
+                <div class="icon-in-delete" onclick="deleteFilter(this)">
+                  <img src="img/cross.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!-- section in sidebar 1 -->
+            <div class="sidebar-section1 bg-light rounded-4">
+              <div class="py-3">
+                <label for="citys" class="px-4">شهر</label>
+              </div>
+              <hr class="m-0" />
+              <div class="px-4 py-3">
+                <select class="fstdropdown-select">
+                  <option value=">اسلام شهر">اسلام شهر</option>
+                  <option value="فیروزکوه">فیروزکوه</option>
+                  <option value="دماوند">دماوند</option>
+                  <option value="شیرکوه">شیرکوه</option>
+                  <option value="همدان">همدان</option>
+                  <option value="تهران">تهران</option>
+                  <option value="شهریار">شهریار</option>
+                  <option value="پردیس">پردیس</option>
+                  <option value="رودهن">رودهن</option>
+                  <option value="بومهن">بومهن</option>
+                  <option value="لواسان">لواسان</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- section in sidebar 2 -->
+            <div class="sidebar-section3 bg-light rounded-4 mt-2">
+              <div class="py-3">
+                <label class="px-4">مراکز آموزشی</label>
+              </div>
+              <hr class="m-0" />
+              <div class="p-3">
+                <div class="image-sidebar pt-3 d-flex align-items-center p-2">
+                  <a href="">
+                    <img
+                      src="img/GetCompanyIcon2.png "
+                      alt="image"
+                      class="icons-sidebar"
+                  /></a>
+                  <p class="text-sidebar3 text-justify">
+                    <a href="#">دپارتمان فناوری نوی فناوری ههای نوین</a>
+                  </p>
+                </div>
+
+                <div class="text-sidebar d-flex align-items-center p-2">
+                  <a href="">
+                    <img
+                      src="img/GetCompanyIcon.jpg"
+                      alt="image"
+                      class="icons-sidebar"
+                  /></a>
+                  <p class="text-sidebar3 text-justify">
+                    <a href="#">دپارتمان فناوری نوی فناوری ههای نوین</a>
+                  </p>
+                </div>
+
+                <div class="text-sidebar d-flex align-items-center p-2">
+                  <a href="">
+                    <img
+                      src="img/GetCompanyIcon.png"
+                      alt="image"
+                      class="icons-sidebar"
+                  /></a>
+                  <p class="text-sidebar3 text-justify">
+                    <a href="#">دپارتمان فناوری نوی فناوری ههای نوین</a>
+                  </p>
+                </div>
+
+                <div class="text-sidebar d-flex align-items-center p-2">
+                  <a href="">
+                    <img
+                      src="img/GetCompanyIcon (2).png"
+                      alt="image"
+                      class="icons-sidebar"
+                  /></a>
+                  <p class="text-sidebar3 text-justify">
+                    <a href="#">دپارتمان فناوری نوی فناوری ههای نوین</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- section in sidebar 3 -->
+
+            <div class="sidebar-section3 bg-light rounded-4 mt-2">
+              <div class="py-3">
+                <label class="px-4">گروه های آموزشی</label>
+              </div>
+              <hr class="m-0" />
+
+              <div class="just-padding pt-3 pb-1 px-2">
+                <!-- ******************** sidebarlist with dropdowns ************************* -->
+                <div
+                  class="sidebar sidebarlist list-group list-group-root well border-0 rounded-4"
+                >
+                  <ul class="nav flex-column" id="nav_accordion">
+                    <li class="nav-item has-submenu" onclick="openNav(test)">
+                      <a class="nav-link" href="#">
+                        <img
+                          src="./img/caret-left-fill.svg"
+                          alt="drop-dwon-icon"
+                          id="test"
+                        />
+                        توانمندسازی مهارتی
+                      </a>
+                      <ul class="submenu collapse">
+                        <li class="has-submenu">
+                          <a class="nav-link" href="#"
+                            ><img
+                              src="./img/caret-left-fill.svg"
+                              alt="drop-dwon-icon"
+                            />فنی مهندسی
+                          </a>
+                          <ul class="submenu collapse">
+                            <li><a class="nav-link" href="#">معماری</a></li>
+                            <li><a class="nav-link" href="#">نرم افزار</a></li>
+                          </ul>
+                        </li>
+                        <li class="has-submenu">
+                          <a class="nav-link" href="#"
+                            ><img
+                              src="./img/caret-left-fill.svg"
+                              alt="drop-dwon-icon"
+                            />کمک تحصیلی
+                          </a>
+                          <ul class="submenu collapse">
+                            <li><a class="nav-link" href="#">برق</a></li>
+                            <li><a class="nav-link" href="#">کامپیوتر</a></li>
+                            <li><a class="nav-link" href="#">الکترونیک</a></li>
+                          </ul>
+                        </li>
+                        <li class="has-submenu">
+                          <a class="nav-link" href="#"
+                            ><img
+                              src="./img/caret-left-fill.svg"
+                              alt="drop-dwon-icon"
+                            />گرافیک و انیمیشن
+                          </a>
+                          <ul class="submenu collapse">
+                            <li><a class="nav-link" href="#">فتوشاپ</a></li>
+                            <li><a class="nav-link" href="#">پریمیر</a></li>
+                            <li><a class="nav-link" href="#">افترافکت</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item has-submenu">
+                      <a class="nav-link" href="#">
+                        <img
+                          src="./img/caret-down-fill.svg"
+                          alt="drop-dwon-icon"
+                        />
+                        طلا و جواهرات
+                      </a>
+                      <ul class="submenu collapse">
+                        <li>
+                          <a class="nav-link" href="#">Submenu item 4 </a>
+                        </li>
+                        <li>
+                          <a class="nav-link" href="#">Submenu item 5 </a>
+                        </li>
+                        <li class="has-submenu">
+                          <a class="nav-link" href="#"
+                            ><img
+                              src="./img/caret-left-fill.svg"
+                              alt="drop-dwon-icon"
+                            />گرافیک و انیمیشن
+                          </a>
+                          <ul class="submenu collapse">
+                            <li><a class="nav-link" href="#">فتوشاپ</a></li>
+                            <li><a class="nav-link" href="#">پریمیر</a></li>
+                            <li><a class="nav-link" href="#">افترافکت</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="nav-link" href="#">Submenu item 7 </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item has-submenu">
+                      <a class="nav-link" href="#">
+                        <img
+                          src="./img/caret-down-fill.svg"
+                          alt="drop-dwon-icon"
+                        />
+                        طلا و جواهرات
+                      </a>
+                      <ul class="submenu collapse">
+                        <li>
+                          <a class="nav-link" href="#">Submenu item 4 </a>
+                        </li>
+                        <li>
+                          <a class="nav-link" href="#">Submenu item 5 </a>
+                        </li>
+                        <li class="has-submenu">
+                          <a class="nav-link" href="#"
+                            ><img
+                              src="./img/caret-left-fill.svg"
+                              alt="drop-dwon-icon"
+                            />گرافیک و انیمیشن
+                          </a>
+                          <ul class="submenu collapse">
+                            <li><a class="nav-link" href="#">فتوشاپ</a></li>
+                            <li><a class="nav-link" href="#">پریمیر</a></li>
+                            <li><a class="nav-link" href="#">افترافکت</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="nav-link" href="#">Submenu item 7 </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> صنایع دستی </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> صنایع دستی1 </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> صنایع دستی2 </a>
+                    </li>
+                  </ul>
+
+                  <div class="more-data px-4 py-2">
+                    <a onclick="myFunctionShowing(this)">+ نمایش بیشتر</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- section in sidebar 4 -->
+            <div class="sidebar-section3 bg-light rounded-4 my-2">
+              <div class="py-3">
+                <label class="px-4">مراکز آموزشی</label>
+              </div>
+              <hr class="m-0" />
+              <div class="p-3">
+                <div class="image-sidebar pt-3 d-flex align-items-center p-2">
+                  <a href="">
+                    <img
+                      src="img/GetCompanyIcon2.png "
+                      alt="image"
+                      class="icons-sidebar"
+                  /></a>
+                  <p class="text-sidebar3 text-justify">
+                    <a href="#">دپارتمان فناوری نوی فناوری ههای نوین</a>
+                  </p>
+                </div>
+
+                <div class="text-sidebar d-flex align-items-center p-2">
+                  <a href="">
+                    <img
+                      src="img/GetCompanyIcon.jpg"
+                      alt="image"
+                      class="icons-sidebar"
+                  /></a>
+                  <p class="text-sidebar3 text-justify">
+                    <a href="#">دپارتمان فناوری نوی فناوری ههای نوین</a>
+                  </p>
+                </div>
+
+                <div class="text-sidebar d-flex align-items-center p-2">
+                  <a href="">
+                    <img
+                      src="img/GetCompanyIcon.png"
+                      alt="image"
+                      class="icons-sidebar"
+                  /></a>
+                  <p class="text-sidebar3 text-justify">
+                    <a href="#">دپارتمان فناوری نوی فناوری ههای نوین</a>
+                  </p>
+                </div>
+
+                <div class="text-sidebar d-flex align-items-center p-2">
+                  <a href="">
+                    <img
+                      src="img/GetCompanyIcon (2).png"
+                      alt="image"
+                      class="icons-sidebar"
+                  /></a>
+                  <p class="text-sidebar3 text-justify">
+                    <a href="#">دپارتمان فناوری نوی فناوری ههای نوین</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- main -->
+        <div class="col-12 col-lg-9">
+          <div class="row">
+            <!-- first card -->
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- second card -->
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- third card -->
+
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- first card -->
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text text-muted">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- second card -->
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- third card -->
+
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- first card -->
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- second card -->
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-light d-flex flex-column fw-bold fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- third card -->
+
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card rounded-4 my-2">
+                <img
+                  src="img/GetProductSalesPlanningImage (2).webp"
+                  class="rounded-4 card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">محصول</h5>
+                  <p class="card-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است
+                  </p>
+                  <a href="#" class="btn btn-light d-flex flex-column fw-bold"
+                    >مشاهده محصول</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/StickySidebar.min.js"></script>
+    <script src="./js/fstdropdown.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/product.js"></script>
+  </body>
+</html>
